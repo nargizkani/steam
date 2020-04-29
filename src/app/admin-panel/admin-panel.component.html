@@ -1,0 +1,50 @@
+<div class="admin">
+    <form>
+        <div class="title">New game admin panel</div>
+        <div class="item">
+            <div class="item_text">Name</div>
+            <input type="text" name="name" [(ngModel)]="gameModel.name">
+        </div>
+        <div class="item">
+            <div class="item_text">Desc</div>
+            <input type="text" name="description" [(ngModel)]="gameModel.description">
+        </div>
+        <div class="item">
+            <div class="item_text">Category</div>
+            <input type="text" name="cat" [(ngModel)]="gameModel.cat">
+        </div>
+        <div class="item">
+            <div class="item_text">Price</div>
+            <input type="text" name="price" [(ngModel)]="gameModel.price">
+        </div>
+        <div class="item">
+            <div class="item_text">Main image</div>
+            <input type="text" name="image" [(ngModel)]="gameModel.image">
+        </div>
+        <hr />
+        <div class="item">
+            <div class="item_text">Screenshot image</div>
+            <input type="text" name="screenshots" [(ngModel)]="gameModel.screenshots">
+        </div>
+            <hr />
+        <div class="item">
+            <div class="item_text">Text</div>
+            <textarea cols="30" rows="10" name="text" [(ngModel)]="gameModel.text"></textarea>
+        </div>
+        <div *ngIf="!edit">
+            <button (click)="onSubmit()">Add new game</button>
+        </div>
+        <div *ngIf="edit">
+            <button (click)="onEdit()">Edit</button>
+        </div>
+    </form>
+    <div class="gl">
+        <div *ngFor="let g of games">
+            <div class="gl_item">
+                <div class="gl_item__name">{{g.name}}</div>
+                <div class="gl_item__edit" (click)="onEditStart(g.id)">Edit</div>
+                <div class="gl_item__delete" (click)="onDelete(g.id)">Delete</div>
+            </div>
+        </div>
+    </div>
+</div>

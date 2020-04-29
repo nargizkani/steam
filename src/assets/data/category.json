@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "Shooter"
+    },
+    {
+        "id": "2",
+        "name": "Action"
+    },
+    {
+        "id": "3",
+        "name": "Adventure"
+    },
+    {
+        "id": "4",
+        "name": "Casual"
+    },
+    {
+        "id": "5",
+        "name": "Racing"
+    },
+    {
+        "id": "6",
+        "name": "Sports"
+    }
+]

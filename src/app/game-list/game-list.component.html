@@ -1,0 +1,4 @@
+<div class="game-list_title">{{ title }}</div>
+<div *ngFor="let game of games">
+    <app-game-card [game]="game" (click)="gameDetails(game.category, game.id)"></app-game-card>
+</div>

@@ -1,0 +1,14 @@
+<div class="header">
+  <div>
+  <a routerLink="home-page" routerLinkActive="active">Home</a>
+  <a routerLink="library" routerLinkActive="active">Library</a>
+  <a class="disabled" routerLink="community">Community</a>
+</div>
+<div *ngIf="!login">
+  <a routerLink="login">Login</a>
+</div>
+<div *ngIf="login">
+  <a (click)="logout()">Logout</a>
+</div>
+</div>
+<router-outlet></router-outlet>

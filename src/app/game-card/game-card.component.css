@@ -1,0 +1,54 @@
+.game-card {
+    background: rgba(60, 63, 91, 0.35);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    border-radius: 5px;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.game-card:hover {
+    background: rgba(60, 63, 91, 0.5);
+    transition: 0.2s;
+}
+.game-card_image img {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: grid;
+}
+.game-card_text {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-self: center;
+}
+.game-card_text__name{
+    font-weight: bold;
+    color: #fff;
+    line-height: 18px;
+}
+.game-card_text__description {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ACACAC;
+}
+.game-card_price {
+    font-weight: bold;
+    display: grid;
+    align-items: center;
+    color: #fff;
+}
+@media (max-width: 1220px) {
+    .game-card {
+        padding: 1rem;
+    }
+}
+@media (max-width: 970px) {
+    .game-card {
+        padding: 1rem;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}

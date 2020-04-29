@@ -1,0 +1,19 @@
+.lib {
+    padding: 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 3rem;
+}
+@media (max-width: 1220px) {
+    .lib {
+        padding: 2rem;
+    }
+}
+@media (max-width: 970px) {
+    .lib {
+        padding: 1rem;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}

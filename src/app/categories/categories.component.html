@@ -1,0 +1,6 @@
+<div class="category">
+    <p>Browse by genre</p>
+    <div *ngFor="let category of categories">
+        <a routerLink="{{category.path}}" routerLinkActive="active">{{ category.name }}</a>
+    </div>
+</div>

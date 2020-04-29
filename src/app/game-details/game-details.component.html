@@ -1,0 +1,54 @@
+<div class="game-details">
+    <div class="game-details_title">{{gameDetails.category.name}}</div>
+    <!-- <app-game-card [game]="gameDetails"></app-game-card> -->
+    <img src="{{gameDetails.image}}" alt="">
+    <div class="game_name">
+        {{gameDetails.name}}
+    </div>
+    {{gameDetails.description}}
+    {{gameDetails.price}}
+    {{gameDetails.text}}
+    <img src="{{gameDetails.screenshots}}" alt="">
+    <div class="game-details_text">
+        <div *ngFor="let t of gameText">
+            <div class="game-detail_text__title">{{gameTextTitles[gameText.indexOf(t)]}}</div>
+            <div class="game-detail_text__text">
+                {{t}}
+            </div>
+        </div>
+        <div class="game-detail_text__title"></div>
+        <div class="game-detail_screenshots">
+            <div *ngFor="let s of screenshots">
+                <img src="{{s}}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="comment_section">
+        <div *ngFor="let c of commentList">
+            <div class="comment_section__item">
+                <div class="ct">{{c.username}}</div>
+                <div class="rating">{{c.rating}} <i class="material-icons">grade</i></div>
+                <div class="tt">{{c.text}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="comment_input">
+        <div class="text">
+            <div class="comment_item">
+                <div class="label">Your name</div>
+                <input type="text" name="username" [(ngModel)]="commentModel.username">
+            </div>
+            <div class="comment_item">
+                <div class="label">Rating</div>
+                <input type="text" name="rating" [(ngModel)]="commentModel.rating">
+            </div>
+        </div>
+        <div class="comment_item">
+            <div class="label">Your comment</div>
+            <textarea name="text" [(ngModel)]="commentModel.text" cols="30" rows="10"></textarea>
+        </div>
+
+        <button (click)="leaveComment()">Leave a comment</button>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.homepage {
+    padding: 2rem 10rem 0 8rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 4rem;
+}
+img {
+    width: 400px;
+}
+.homepage_title {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+}

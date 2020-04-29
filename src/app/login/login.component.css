@@ -1,0 +1,47 @@
+.login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #1D1F35;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    display: grid;
+    grid-gap: 1rem;
+    width: 300px;
+}
+label {
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+.input_item {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+button {
+    font-size: 18px;
+    font-weight: bold;
+    background: #55A6F4;
+    height: 38px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1.3rem;
+}
+.login_card__title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.selector {
+    margin-top: 1rem;
+    color: #55A6F4;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}

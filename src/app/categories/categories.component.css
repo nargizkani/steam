@@ -1,0 +1,29 @@
+.category {
+    background: #3C3F5B;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+.category p {
+    color: #fff;
+    font-weight: bold;
+    margin: 0 0 1rem 2rem;
+}
+.category div {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+}
+a {
+    padding: 1rem 0 1rem 2rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border-top: rgba(42, 44, 62, 0.205) 1px solid;
+    text-decoration: none;
+}
+a:hover:not(.active) {
+    background: rgba(42, 44, 62, 0.459);
+}
+.active {
+    background: #2A2C3E;
+}

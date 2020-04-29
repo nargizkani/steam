@@ -1,0 +1,82 @@
+.game-details {
+    color: #fff;
+    width: 70vw;
+    overflow: hidden;
+}
+.game_name {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+}
+.game-details_title {
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 2rem;    
+}
+.game-details_text {
+    display: grid;
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+.game-detail_text__title {
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.game-detail_text__text {
+    color: #acacac;
+    font-size: 14px;
+}
+.game-detail_screenshots {
+    display: grid;
+    grid-gap: 1rem;
+}
+.game-detail_screenshots img {
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+}
+.comment_item {
+    display: grid;
+}
+.text {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
+}
+.comment_section__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    background: #fff;
+    color: #000;
+}
+.ct {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+.rating {
+    display: grid;
+    justify-self: end;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+.rating i {
+    color: rgb(255, 217, 0);
+}
+.comment_section {
+    display: grid;
+    grid-gap: 10px;
+    padding-bottom: 2rem;
+}
+@media (max-width: 1220px) {
+}
+@media (max-width: 970px) {
+    .game-detail_screenshots img {
+        width: 400px;
+    }
+}
